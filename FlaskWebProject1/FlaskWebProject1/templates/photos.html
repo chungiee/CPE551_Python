@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message1 }}</h3>
+<h3>{{ message2 }}</h3>
+{{msg}}
+<br>
+<form action="/photos" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file_name" multiple>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
+
+

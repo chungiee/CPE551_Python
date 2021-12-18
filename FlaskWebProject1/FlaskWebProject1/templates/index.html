@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Home Drive</h1>
+    <p class="lead">This website allows us to upload and save our own photos on an external hard drive. The goal is to be able to uplad a file from anywhere</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Upload a Document</h2>
+        <p>
+            Use this link to upload a document into your drive.
+        </p>
+        <p><a class="btn btn-default" href="{{ url_for('documents') }}">Upload Now &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Upload a photo</h2>
+        <p>The Python Package Index is a repository of software for the Python programming language.</p>
+        <p><a class="btn btn-default" href="{{ url_for('photos') }}">Upload Now &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Resources</h2>
+        <p>Here is a list of resources we used to complete this project</p>
+        <p><a class="btn btn-default" href="https://docs.google.com/document/d/1VlEti8bKfRJOjOP_Eg2JE6r302Z9BWwo4DhLIn_RbF0/edit?usp=sharing">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
